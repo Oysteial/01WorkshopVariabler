@@ -17,6 +17,7 @@
                 <span id="playername">Marius</span>
             </div>
             <div id="points"><img src="img/points.png" /> <span id="points-count">0</span></div>
+            <div id="levels">Level: <span id="levels-count"> 0</span></div>
         </section>
         <aside id="hud-inventory">
             <h3>Armory</h3>
@@ -40,5 +41,39 @@
             </table>
         </aside>
     </div>
+
+    <script>
+        //Oppgave 1 Spillernavn
+        const playername = "Øystein"
+        document.getElementById("playername").innerHTML = playername
+
+        //Oppgave 2 Mynter
+        const coins = 15
+        document.getElementById("coins-count").innerHTML = coins
+
+        //Oppgave 3 Liv
+        let lives = 3
+        document.getElementById("lives-count").innerHTML = lives
+
+        //Oppgave 4 Nivå våpen
+        let sword = 10
+        let warhammer = 15
+        let battleaxe = 25
+        let armour = 5
+
+        document.getElementById("weapon-battleaxe").innerHTML = battleaxe
+        document.getElementById("weapon-warhammer").innerHTML = warhammer
+        document.getElementById("weapon-longsword").innerHTML = sword
+        document.getElementById("weapon-armour").innerHTML = armour
+
+        //Oppgave 5 Poeng
+        let points = (coins * 5) + (sword * 5) + (warhammer * 15) + (battleaxe + 20) + (armour * 5)
+        document.getElementById("points-count").innerHTML = points  
+
+        //Oppgave 6
+        const levels = 1
+        document.getElementById("levels-count").innerHTML = levels
+
+    </script>
 </body>
 </html>
